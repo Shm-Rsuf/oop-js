@@ -187,7 +187,6 @@
 // let bike3 = new Vehicle1('Ninja', 'Suzuki', '998cc');
 // bike3.getDetails();
 
-
 // /**************************************/
 // class PersonClass {
 //   constructor(name, age, job) {
@@ -279,7 +278,6 @@
 // swap(a, b);
 
 // console.log(`the value of a = ${a} And the value of b = ${b}`);
-
 
 // const arr = [0, 1, 3, 4, 8];
 // arr.push(100);
@@ -384,7 +382,7 @@
 // console.log(messi.playerRatings());
 // console.log(neymar.playerRatings());
 
-class Bike {
+/* class Bike {
   constructor(bikeName, model, engine) {
     this.bikeName = bikeName;
     this.model = model;
@@ -413,4 +411,22 @@ console.log(suzuki);
 console.log(suzuki.fullDetails());
 console.log(suzuki.isAbs());
 
-console.log(fzs.isAbs());
+console.log(fzs.isAbs()); */
+
+/* class Car {
+  constructor(model, engine, price) {
+    this.model = model;
+    this.engine = engine;
+    this.price = price;
+  }
+
+  details() {
+    return `This car name is ${this.model}. engine number-${this.engine} and the price of this car is $${this.price}`;
+  }
+}
+
+const maruti = new Car("maruti800", "ID:502-079", 450000);
+
+// console.log(maruti);
+// console.log(maruti.engine);
+console.log(maruti.details()); */
