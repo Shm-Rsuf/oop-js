@@ -430,3 +430,48 @@ const maruti = new Car("maruti800", "ID:502-079", 450000);
 // console.log(maruti);
 // console.log(maruti.engine);
 console.log(maruti.details()); */
+
+const karim = {
+  name: "Abdul karim",
+  job: "Farmer",
+  birthdate: 1999,
+  age: 25,
+
+  detatils: function () {
+    console.log(
+      `He is ${this.name}, ${this.job}. Now he is ${this.age} years old.`
+    );
+  },
+
+  presentAge: function (name) {
+    console.log(
+      `Now ${this.name} is ${
+        new Date().getFullYear() - this.birthdate
+      } years old.`
+    );
+  },
+
+  greet: function (msg, currentYear) {
+    console.log(
+      `${msg}!.Now ${this.name} is ${currentYear - this.birthdate} years old.`
+    );
+  },
+};
+
+const rahim = {
+  name: "Mr. Rahim",
+  job: "Engineer",
+  birthdate: 1996,
+  age: 27,
+};
+
+// karim.detatils();
+// karim.detatils.call(rahim);
+// karim.presentAge();
+// karim.presentAge.apply(rahim);
+// karim.greet("Hello", 2023);
+// karim.greet.call(rahim, "Hi dear", 2025);
+// karim.greet.apply(rahim, ["world", 2030]);
+const getBind = karim.greet.bind(rahim, "bind", 2050);
+
+getBind();
