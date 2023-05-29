@@ -431,7 +431,7 @@ const maruti = new Car("maruti800", "ID:502-079", 450000);
 // console.log(maruti.engine);
 console.log(maruti.details()); */
 
-const karim = {
+/* const karim = {
   name: "Abdul karim",
   job: "Farmer",
   birthdate: 1999,
@@ -463,7 +463,7 @@ const rahim = {
   job: "Engineer",
   birthdate: 1996,
   age: 27,
-};
+}; */
 
 // karim.detatils();
 // karim.detatils.call(rahim);
@@ -472,6 +472,63 @@ const rahim = {
 // karim.greet("Hello", 2023);
 // karim.greet.call(rahim, "Hi dear", 2025);
 // karim.greet.apply(rahim, ["world", 2030]);
-const getBind = karim.greet.bind(rahim, "bind", 2050);
+// const getBind = karim.greet.bind(rahim, "bind", 2050);
 
-getBind();
+// getBind();
+
+/* function Person(name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+}
+
+Person.prototype.calcAge = function (dob) {
+  return `${this.name} is ${new Date().getFullYear() - dob} years old.`;
+};
+
+Person.prototype.country = "Bangladesh";
+
+function Teacher(name, age, job, subject) {
+  Person.call(this, name, age, job);
+  this.subject = subject;
+}
+
+let samir = new Person("Mr. Samir", 24, "An actor");
+let newTeacher = new Teacher("mannan", 45, "B.Sc", "Physics");
+console.log(newTeacher.subject);
+console.log(newTeacher.age);
+console.log(newTeacher.job);
+console.log(newTeacher.name); */
+
+/* (function iife() {
+  console.log("immediately invoked function expressions");
+})();
+ */
+const numberArr = [1, 2, 3, 4, 5, 6, 8, 9];
+
+/* for (const element of numberArr) {
+  if (element === 5) break;
+  console.log(element);
+} */
+// const [first, , third, ...rest] = numberArr;
+// console.log(first, third);
+// console.log(rest);
+
+/* const comObj = {
+  otherObj: {
+    another: {
+      name: "shm usuf",
+    },
+  },
+};
+
+const userName = comObj.otherObj.another.name;
+
+const {
+  otherObj: {
+    another: { name: user },
+  },
+} = comObj;
+
+console.log(userName);
+console.log(user); */
